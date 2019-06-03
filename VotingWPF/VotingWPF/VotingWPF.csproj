@@ -58,6 +58,9 @@
     <Compile Include="Views\AdminEnter.xaml.cs">
       <DependentUpon>AdminEnter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CandidateDash.xaml.cs">
+      <DependentUpon>CandidateDash.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CandPanel.xaml.cs">
       <DependentUpon>CandPanel.xaml</DependentUpon>
     </Compile>
@@ -69,6 +72,9 @@
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Voter.cs" />
     <Compile Include="Classes\Lists.cs" />
+    <Compile Include="Views\ElectionsPanel.xaml.cs">
+      <DependentUpon>ElectionsPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Service\ElectionRepository.cs" />
     <Compile Include="Service\UserService.cs" />
     <Compile Include="Service\VoteService.cs" />
+    <Compile Include="Views\VoterDash.xaml.cs">
+      <DependentUpon>VoterDash.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\VoterPanel.xaml.cs">
       <DependentUpon>VoterPanel.xaml</DependentUpon>
     </Compile>
@@ -89,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AdminPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandidateDash.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,11 +124,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ElectionsPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VoterDash.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
