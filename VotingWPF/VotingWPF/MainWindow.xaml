@@ -1,0 +1,15 @@
+﻿<Window x:Class="VotingWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VotingWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="VOTER" x:Name="GoVoteButton" Click="GoVoteButton_Click" HorizontalAlignment="Left" Margin="55,210,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
+        <Button Content="CANDIDATE" x:Name="GoCandButton" Click="GoCandButton_Click" HorizontalAlignment="Left" Margin="327,209,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
+        <Button Content="ADMIN" x:Name="GoAdminButton" Click="GoAdminButton_Click" HorizontalAlignment="Left" Margin="578,209,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
+
+    </Grid>
+</Window>
