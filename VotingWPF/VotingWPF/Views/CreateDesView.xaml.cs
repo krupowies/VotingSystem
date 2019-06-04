@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace VotingWPF.Views
 {
     /// <summary>
-    /// Logika interakcji dla klasy CandidateDash.xaml
+    /// Logika interakcji dla klasy CreateDesView.xaml
     /// </summary>
-    public partial class CandidateDash : Window
+    public partial class CreateDesView : Window
     {
-        public CandidateDash()
+        public CreateDesView()
         {
             InitializeComponent();
-        }
-
-        private void CreateDesButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

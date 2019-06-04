@@ -52,3 +52,9 @@ C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Voting
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\VotingWPF.csproj.CoreCompileInputs.cache
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\VotingWPF.exe
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\VotingWPF.pdb
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\CandidateDash.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\ElectionsPanel.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\VoterDash.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\CandidateDash.baml
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\ElectionsPanel.baml
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\VoterDash.baml

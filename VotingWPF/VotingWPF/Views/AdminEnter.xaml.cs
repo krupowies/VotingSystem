@@ -33,7 +33,17 @@ namespace VotingWPF
 
         private void EnterButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (passwordtxt.Text == "admin")
+            {
+                Window adminPanel = new AdminPanel();
+                this.Close();
+                adminPanel.Show();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect password");
+                passwordtxt.Text = "";
+            }
         }
     }
 }

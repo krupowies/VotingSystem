@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\App.xaml
-7-1775492202
+10-1415557646
 
-25971125562
+28550955677
 131569487696
-Views\AdminEnter.xaml;Views\AdminPanel.xaml;Views\CandPanel.xaml;MainWindow.xaml;Views\Login.xaml;Views\Register.xaml;Views\VoterPanel.xaml;
+Views\AdminEnter.xaml;Views\AdminPanel.xaml;Views\CandidateDash.xaml;Views\CandPanel.xaml;MainWindow.xaml;Views\ElectionsPanel.xaml;Views\Login.xaml;Views\Register.xaml;Views\VoterDash.xaml;Views\VoterPanel.xaml;
 
 False
 

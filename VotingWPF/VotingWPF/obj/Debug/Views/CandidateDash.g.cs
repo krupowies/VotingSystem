@@ -40,38 +40,6 @@ namespace VotingWPF.Views {
     /// </summary>
     public partial class CandidateDash : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
-        
-        #line 11 "..\..\..\Views\CandidateDash.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button CheckResButton;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 12 "..\..\..\Views\CandidateDash.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button CreateDesButton;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 13 "..\..\..\Views\CandidateDash.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button OtherButton;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 14 "..\..\..\Views\CandidateDash.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button GoBackButton;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -100,45 +68,6 @@ namespace VotingWPF.Views {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
-            switch (connectionId)
-            {
-            case 1:
-            this.CheckResButton = ((System.Windows.Controls.Button)(target));
-            
-            #line 11 "..\..\..\Views\CandidateDash.xaml"
-            this.CheckResButton.Click += new System.Windows.RoutedEventHandler(this.CheckResButton_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 2:
-            this.CreateDesButton = ((System.Windows.Controls.Button)(target));
-            
-            #line 12 "..\..\..\Views\CandidateDash.xaml"
-            this.CreateDesButton.Click += new System.Windows.RoutedEventHandler(this.CreateDesButton_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 3:
-            this.OtherButton = ((System.Windows.Controls.Button)(target));
-            
-            #line 13 "..\..\..\Views\CandidateDash.xaml"
-            this.OtherButton.Click += new System.Windows.RoutedEventHandler(this.OtherButton_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 4:
-            this.GoBackButton = ((System.Windows.Controls.Button)(target));
-            
-            #line 14 "..\..\..\Views\CandidateDash.xaml"
-            this.GoBackButton.Click += new System.Windows.RoutedEventHandler(this.GoBackButton_Click);
-            
-            #line default
-            #line hidden
-            return;
-            }
             this._contentLoaded = true;
         }
     }
