@@ -9,11 +9,11 @@ namespace VotingWPF.Classes
     class Candidate : User
     {
         string name;
-        string lastName;
+        string lastName; 
         int age;
         Gender gender;
         string description;
-        public Candidate(string userName, string password, int id, Role role, string name, string lastName, int age, Gender gender,string description) : base(userName, password, role)
+        public Candidate(string userName, string password, int id, string name, string lastName, int age, Gender gender,string description) : base(userName, password, Role.CANDIDATE)
         {
             this.name = name;
             this.lastName = lastName;

@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="CreateDesView" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Write something about you" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40" FontSize="16" Height="36" Width="220"/>
+        <TextBox Name="descriptiontxt" Background="Gray" Foreground="White" FontSize="40" Height="200" Width="600"/>
+        <Button x:Name="ConfirmButton" Click="ConfirmButton_Click" Margin="500 350 20 20" FontSize="20" FontWeight="Bold" Content="Enter" Width="150" Height="30" Background="MediumSpringGreen" />
+        <Button x:Name="GoBackButton" Click="GoBackButton_Click" Margin="20 350 500 20" FontSize="20" FontWeight="Bold" Content="Go back" Width="150" Height="30" Background="MediumSpringGreen" />
     </Grid>
+    
 </Window>

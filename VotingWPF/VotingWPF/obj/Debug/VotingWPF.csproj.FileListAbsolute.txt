@@ -58,3 +58,11 @@ C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\CandidateDash.baml
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\ElectionsPanel.baml
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\VoterDash.baml
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\CreateDesView.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\CreateDesView.baml
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\AdminElections.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\AdminElections.baml
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\AddElection.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\ElectionDetail.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\AddElection.baml
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\ElectionDetail.baml

@@ -9,10 +9,8 @@
     <Grid>
         <Label Content="Admin" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="373,60,0,0" FontSize="16" Height="36" Width="136"/>
         <Button Content="Manage Users" x:Name="GoManageButton" Click="GoManageButton_Click" HorizontalAlignment="Left" Margin="576,205,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
-        <Button Content="Create Election" x:Name="CreateEleButton" Click="CreateEleButton_Click" HorizontalAlignment="Left" Margin="321,205,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40" RenderTransformOrigin="0.735,0.51"/>
-        <Button Content="Check Results" x:Name="CheckResButton" Click="CheckResButton_Click" HorizontalAlignment="Left" Margin="88,205,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40" RenderTransformOrigin="0.735,0.51"/>
-
+        <Button Content="Create Election" x:Name="CreateEleButton" Click="CreateEleButton_Click" HorizontalAlignment="Left" Margin="134,205,0,0" VerticalAlignment="Top" Width="128" Background="MediumSpringGreen" Height="40" RenderTransformOrigin="0.735,0.51"/>
         <Button Content="Go Back" x:Name="GoBackButton" Click="GoBackButton_Click" HorizontalAlignment="Center"  Width="129" Background="MediumSpringGreen" Height="40" Margin="38,349,626.6,31"/>
-        
+
     </Grid>
 </Window>

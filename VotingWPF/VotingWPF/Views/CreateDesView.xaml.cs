@@ -23,5 +23,15 @@ namespace VotingWPF.Views
         {
             InitializeComponent();
         }
+
+        private void ConfirmButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

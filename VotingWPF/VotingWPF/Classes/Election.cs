@@ -8,17 +8,31 @@ namespace VotingWPF.Classes
 {
     class Election
     {
+        int id;
+        string name;
         string question;
-        int votes;
-        List<Candidate> candidates;
-        public Election(string question,int votes)
+        List<ElectionOption> candidates;
+
+        public Election(int id,string name,string question)
         {
+            this.id = id;
+            this.Name = name;
             this.question = question;
-            this.votes = votes;
-            this.Candidates = new List<Candidate>();
+            this.Candidates = new List<ElectionOption>();
         }
         public string Question { get => question; set => question = value; }
-        public int Votes { get => votes; set => votes = value; }
-        internal List<Candidate> Candidates { get => candidates; set => candidates = value; }
+        public string Name { get => name; set => name = value; }
+        public int Id { get => id; set => id = value; }
+        internal List<ElectionOption> Candidates { get => candidates; set => candidates = value; }
+        public void AddOption(Candidate Person)
+        {
+            ElectionOption candidate = new ElectionOption(Person);
+            candidates.Add(candidate);
+        }
+        public string Winner { get {
+                //ZAIMPLEMENTOWAC FUNKCJE ZWRACAJACA NAZWE UZYTKOWNIKA KTORY MA NAJWECEJ GLOSOW W CANDIDATES
+                return "Adam";
+            }
+        }
     }
 }

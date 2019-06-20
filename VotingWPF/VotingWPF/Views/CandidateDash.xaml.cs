@@ -28,5 +28,20 @@ namespace VotingWPF.Views
         {
 
         }
+
+        private void OtherButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckResButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

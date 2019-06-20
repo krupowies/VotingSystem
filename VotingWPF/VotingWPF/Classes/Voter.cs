@@ -13,7 +13,7 @@ namespace VotingWPF.Classes
         int age;
         Gender gender;
 
-        public Voter(string userName, string password,Role role, string name, string lastName, int age, Gender gender) : base(userName, password,role)
+        public Voter(string userName, string password,string name, string lastName, int age, Gender gender) : base(userName, password,Role.VOTER)
         {
             this.name = name;
             this.lastName = lastName;

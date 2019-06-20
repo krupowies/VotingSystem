@@ -55,6 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\ElectionOption.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Service\CandidateService.cs" />
+    <Compile Include="Service\ElectionService.cs" />
+    <Compile Include="Service\DataBase.cs" />
+    <Compile Include="Views\AddElection.xaml.cs">
+      <DependentUpon>AddElection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminElections.xaml.cs">
+      <DependentUpon>AdminElections.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AdminEnter.xaml.cs">
       <DependentUpon>AdminEnter.xaml</DependentUpon>
     </Compile>
@@ -72,27 +83,38 @@
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Voter.cs" />
     <Compile Include="Classes\Lists.cs" />
+    <Compile Include="Views\CreateDesView.xaml.cs">
+      <DependentUpon>CreateDesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ElectionDetail.xaml.cs">
+      <DependentUpon>ElectionDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ElectionsPanel.xaml.cs">
       <DependentUpon>ElectionsPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ListView.cs" />
     <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Repositories\ElectionRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
-    <Compile Include="Repositories\VoteRepository.cs" />
-    <Compile Include="Service\ElectionRepository.cs" />
     <Compile Include="Service\UserService.cs" />
-    <Compile Include="Service\VoteService.cs" />
     <Compile Include="Views\VoterDash.xaml.cs">
       <DependentUpon>VoterDash.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\VoterPanel.xaml.cs">
       <DependentUpon>VoterPanel.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\AddElection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdminElections.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AdminEnter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -124,6 +146,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\CreateDesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ElectionDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ElectionsPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

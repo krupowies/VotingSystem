@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VotingWPF.Classes;
 
-namespace VotingWPF.Repositories
+namespace VotingWPF.Repositoriy
 {
     class UserRepository
     {
@@ -100,9 +101,33 @@ namespace VotingWPF.Repositories
 
 
 
-        public void loadData()
+        public void loadVoterFromFile()
         {
+            string fileName = @"";
+            string line = "";
 
+            StreamReader file = new StreamReader(fileName);
+            while((line = file.ReadLine()) !=null)
+            {
+                string[] userData = line.Split(' ');
+                int id = 0;
+                Int32.TryParse(userData[0], out id);
+                Voter voter = new Voter();
+            }
+        }
+
+        public void loadCandFromFile()
+        {
+            string fileName = @"";
+            string line = "";
+
+            StreamReader file = new StreamReader(fileName);
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] userData = line.Split(' ');
+                int id = 0;
+                Int32.TryParse(userData[0], out id);
+            }
         }
 
     }

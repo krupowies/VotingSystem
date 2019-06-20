@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VotingWPF.Views;
 
 namespace VotingWPF
 {
@@ -33,7 +34,9 @@ namespace VotingWPF
 
         private void CreateEleButton_Click(object sender, RoutedEventArgs e)
         {
-
+            AdminElections adminelection = new AdminElections();
+            adminelection.Show();
+            this.Close();
         }
 
         private void GoManageButton_Click(object sender, RoutedEventArgs e)

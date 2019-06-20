@@ -1,0 +1,42 @@
+﻿<Window x:Class="VotingWPF.Views.AddElection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VotingWPF.Views"
+        mc:Ignorable="d"
+        Title="AddElection" Height="450" Width="800">
+    <StackPanel>
+        <!--headline-->
+        <Grid>
+            <Label Content="Add Election !" Foreground="Black" FontSize="50" HorizontalAlignment="Center"/>
+        </Grid>
+        <Separator></Separator>
+        <!--login-->
+        <Grid Margin="24,24,24,24">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="0.6*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Name " Foreground="Black" FontSize="50" HorizontalAlignment="Left"/>
+            <TextBox Grid.Column="1" Name="Elenametxt" Background="Gray" Foreground="White" FontSize="20"/>
+        </Grid>
+        <!--haslo-->
+        <Grid Margin="24,24,24,24">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="126*"/>
+                <ColumnDefinition Width="197*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Question " Foreground="Black" FontSize="50" HorizontalAlignment="Left" Margin="0,0,0,0.2" Width="248"/>
+            <TextBox Grid.Column="1" Name="Questiontxt" Background="Gray" Foreground="White" FontSize="20" Margin="2,0,-0.4,0.2"/>
+        </Grid>
+        <Grid Margin="24,24,24,24">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="AddButton" Click="AddButton_Click" Margin="20 50 20 20" FontSize="20" FontWeight="Bold" Content="Add" Width="150" Height="30" Background="MediumSpringGreen" />
+            <Button Grid.Column="1" x:Name="GoBackButton" Click="GoBackButton_Click" Margin="20 50 20 20" FontSize="20" FontWeight="Bold" Content="Go back" Width="150" Height="30" Background="MediumSpringGreen" />
+        </Grid>
+    </StackPanel>
+</Window>
