@@ -16,7 +16,7 @@
             <TextBlock Grid.Column="0" Text="Name " Foreground="Black" FontSize="50" HorizontalAlignment="Left"/>
             <TextBlock Grid.Column="1" Name="Elenametxt" Background="Gray" Foreground="White" FontSize="20"/>
         </Grid>
-        <!--haslo-->
+
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="126*"/>
@@ -25,7 +25,6 @@
             <TextBlock Grid.Column="0" Text="Question " Foreground="Black" FontSize="50" HorizontalAlignment="Left" Margin="0,0,0,0.2" Width="248"/>
             <TextBlock Grid.Column="1" Name="Questiontxt" Background="Gray" Foreground="White" FontSize="20" Margin="2,0,-0.4,0.2"/>
         </Grid>
-        <TextBox Grid.Column="1" Name="CandidateInput" Background="Gray" Foreground="White" FontSize="20" Margin="2,0,-0.4,0.2"/>
 
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>
@@ -33,9 +32,9 @@
                 <ColumnDefinition Width="248"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" x:Name="AddButton" Click="AddButton_Click" Margin="20 50 20 20" FontSize="20" FontWeight="Bold" Content="Add" Width="150" Height="30" Background="MediumSpringGreen" />
-            <Button Grid.Column="1" x:Name="DeleteButton" Click="DeleteButton_Click" Margin="20 50 20 20" FontSize="20" FontWeight="Bold" Content="Delete" Width="150" Height="30" Background="MediumSpringGreen" />
-            <Button Grid.Column="2" x:Name="GoBackButton" Click="GoBackButton_Click" Margin="20 50 20 20" FontSize="20" FontWeight="Bold" Content="Go back" Width="150" Height="30" Background="MediumSpringGreen" />
+            <TextBox Grid.Column="0" Name="CandidateInput" Background="Gray" Foreground="White" FontSize="20" Margin="2,50,247.8,0" Grid.ColumnSpan="2"/>
+            <Button Grid.Column="1" x:Name="AddButton" Click="AddButton_Click" Margin="20 50 20 20" FontSize="20" FontWeight="Bold" Content="Add" Width="150" Height="30" Background="MediumSpringGreen" />
+            <Button Grid.Column="2" x:Name="DeleteButton" Click="DeleteButton_Click" Margin="20 50 20 20" FontSize="20" FontWeight="Bold" Content="Delete" Width="150" Height="30" Background="MediumSpringGreen" />
         </Grid>
         <DataGrid x:Name="electionList" HorizontalAlignment="Left" SelectionMode="Single"  VerticalAlignment="Top"   Margin="10,55,-10.4,0" Loaded="ElectionList_Loaded" BorderBrush="White">
             <DataGrid.Columns>

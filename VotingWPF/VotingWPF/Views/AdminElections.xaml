@@ -9,6 +9,7 @@
     <Grid>
         <Button Content="Add Election" x:Name="AddEleButton" Click="AddEleButton_Click" HorizontalAlignment="Left" Margin="601,10,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
         <Button Content="Delete Election" x:Name="DeleteEleButton" Click="DeleteEleButton_Click" HorizontalAlignment="Left" Margin="434,10,0,0" VerticalAlignment="Top" Width="128" Background="MediumSpringGreen" Height="40" RenderTransformOrigin="0.735,0.51"/>
+        <Button Content="Go Back" x:Name="GoBackButton" Click="GoBackButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Width="128" Background="MediumSpringGreen" Height="40" RenderTransformOrigin="0.735,0.51" Margin="0,10,642.6,0"/>
 
         <DataGrid x:Name="electionList" HorizontalAlignment="Left" SelectionMode="Single"  VerticalAlignment="Top"   Margin="10,55,-10.4,0" Loaded="ElectionList_Loaded"  PreviewMouseDoubleClick="ElectionList_PreviewMouseDoubleClick" BorderBrush="White">
             <DataGrid.Columns>

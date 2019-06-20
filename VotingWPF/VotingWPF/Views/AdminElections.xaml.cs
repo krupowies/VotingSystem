@@ -71,5 +71,12 @@ namespace VotingWPF.Views
                 electionList.Items.Add(election);
             });
         }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window AdminElePanel = new AdminPanel();
+            this.Close();
+            AdminElePanel.Show();
+        }
     }
 }

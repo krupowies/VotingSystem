@@ -27,21 +27,21 @@ namespace VotingWPF
         private void GoLogButton_Click(object sender, RoutedEventArgs e)
         {
             Window logPanel = new Login();
-            this.Hide();
+            this.Close();
             logPanel.Show();
         }
 
         private void GoRegButton_Click(object sender, RoutedEventArgs e)
         {
             Window regPanel = new Register();
-            this.Hide();
+            this.Close();
             regPanel.Show();
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
             Window startPanel = new MainWindow();
-            this.Hide();
+            this.Close();
             startPanel.Show();
         }
 

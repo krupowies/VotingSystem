@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="ElectionsPanel" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Go Back" x:Name="GoBackButton" Click="GoBackButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Width="128" Background="MediumSpringGreen" Height="40" RenderTransformOrigin="0.735,0.51" Margin="0,10,642.6,0"/>
+        <Label Content="Please, choose question and click twice to vote" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="280,10,166.6,0" FontSize="16" Height="36" Width="347"/>
+        <DataGrid x:Name="electionList" HorizontalAlignment="Left" SelectionMode="Single"  VerticalAlignment="Top"   Margin="10,55,-10.4,0" Loaded="ElectionList_Loaded"  PreviewMouseDoubleClick="ElectionList_PreviewMouseDoubleClick" BorderBrush="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Width="auto" Header="Id" HeaderStringFormat="" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Name}"  Width="*" Header="Name" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Question}"  Width="*" Header="Question" IsReadOnly="True"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
     </Grid>
 </Window>

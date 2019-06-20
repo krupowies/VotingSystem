@@ -40,7 +40,9 @@ namespace VotingWPF.Views
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Window startPanel = new AdminElections();
+            this.Close();
+            startPanel.Show();
         }
     }
 }

@@ -86,6 +86,9 @@
     <Compile Include="Views\CreateDesView.xaml.cs">
       <DependentUpon>CreateDesView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DoTheVote.xaml.cs">
+      <DependentUpon>DoTheVote.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ElectionDetail.xaml.cs">
       <DependentUpon>ElectionDetail.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\CreateDesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DoTheVote.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

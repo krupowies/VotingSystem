@@ -28,7 +28,7 @@ namespace VotingWPF
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
             Window startPanel = new MainWindow();
-            this.Hide();
+            this.Close();
             startPanel.Show();
         }
 
@@ -75,7 +75,7 @@ namespace VotingWPF
             lists.UserService.addUser(role, usernametxt.Text, passwordtxt.Text, nametxt.Text, lastnametxt.Text, age, gender,description);
 
             Window startPanel = new MainWindow();
-            this.Hide();
+            this.Close();
             startPanel.Show();
         }
     }

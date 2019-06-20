@@ -40,6 +40,22 @@ namespace VotingWPF.Views {
     /// </summary>
     public partial class ElectionsPanel : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 10 "..\..\..\Views\ElectionsPanel.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button GoBackButton;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 12 "..\..\..\Views\ElectionsPanel.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.DataGrid electionList;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -68,6 +84,33 @@ namespace VotingWPF.Views {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.GoBackButton = ((System.Windows.Controls.Button)(target));
+            
+            #line 10 "..\..\..\Views\ElectionsPanel.xaml"
+            this.GoBackButton.Click += new System.Windows.RoutedEventHandler(this.GoBackButton_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 2:
+            this.electionList = ((System.Windows.Controls.DataGrid)(target));
+            
+            #line 12 "..\..\..\Views\ElectionsPanel.xaml"
+            this.electionList.Loaded += new System.Windows.RoutedEventHandler(this.ElectionList_Loaded);
+            
+            #line default
+            #line hidden
+            
+            #line 12 "..\..\..\Views\ElectionsPanel.xaml"
+            this.electionList.PreviewMouseDoubleClick += new System.Windows.Input.MouseButtonEventHandler(this.ElectionList_PreviewMouseDoubleClick);
+            
+            #line default
+            #line hidden
+            return;
+            }
             this._contentLoaded = true;
         }
     }

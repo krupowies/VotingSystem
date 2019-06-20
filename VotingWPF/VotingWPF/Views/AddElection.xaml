@@ -21,7 +21,7 @@
             <TextBlock Grid.Column="0" Text="Name " Foreground="Black" FontSize="50" HorizontalAlignment="Left"/>
             <TextBox Grid.Column="1" Name="Elenametxt" Background="Gray" Foreground="White" FontSize="20"/>
         </Grid>
-        <!--haslo-->
+        
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="126*"/>

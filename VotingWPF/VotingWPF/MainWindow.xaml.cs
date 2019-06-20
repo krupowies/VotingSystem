@@ -28,14 +28,14 @@ namespace VotingWPF
         private void GoVoteButton_Click(object sender, RoutedEventArgs e)
         {
             Window votePanel = new VoterPanel();
-            this.Hide();
+            this.Close();
             votePanel.Show();
         }
 
         private void GoCandButton_Click(object sender, RoutedEventArgs e)
         {
             Window candPanel = new CandPanel();
-            this.Hide();
+            this.Close();
             candPanel.Show();
         }
 
@@ -43,7 +43,7 @@ namespace VotingWPF
         private void GoAdminButton_Click(object sender, RoutedEventArgs e)
         {
             Window adminEnter = new AdminEnter();
-            this.Hide();
+            this.Close();
             adminEnter.Show();
         }
     }

@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace VotingWPF.Views
 {
     /// <summary>
-    /// Logika interakcji dla klasy ElectionsPanel.xaml
+    /// Logika interakcji dla klasy DoTheVote.xaml
     /// </summary>
-    public partial class ElectionsPanel : Window
+    public partial class DoTheVote : Window
     {
-        public ElectionsPanel()
+        public DoTheVote()
         {
             InitializeComponent();
-        }
-
-        private void GoBackButton_Click(object sender, RoutedEventArgs e)
-        {
-            Window startPanel = new VoterDash();
-            this.Close();
-            startPanel.Show();
         }
     }
 }

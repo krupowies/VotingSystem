@@ -27,7 +27,7 @@ namespace VotingWPF
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
             Window startPanel = new MainWindow();
-            this.Hide();
+            this.Close();
             startPanel.Show();
         }
 
