@@ -8,19 +8,24 @@ namespace VotingWPF.Classes
 {
     class ElectionOption
     {
-        Candidate Person;
+        Candidate candidate;
         int voteCounter;
-        public ElectionOption(Candidate Person)
+        public ElectionOption(Candidate candidate)
         {
-            this.Person = Person;
+            this.Candidate = candidate;
             this.VoteCounter = 0;
-        }
+        } 
 
         public int VoteCounter { get => voteCounter; set => voteCounter = value; }
+        internal Candidate Candidate { get => candidate; set => candidate = value; }
 
         public void AddOne()
         {
             this.VoteCounter += 1;
         }
+
+        public string CandidateName { get { return candidate.Name; } }
+        public string CandidateLastName { get { return candidate.LastName; } }
+        public int CandidateVotes { get { return voteCounter; } }
     }
 }

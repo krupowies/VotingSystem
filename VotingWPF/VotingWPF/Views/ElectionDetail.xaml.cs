@@ -16,16 +16,13 @@ using VotingWPF.Service;
 
 namespace VotingWPF.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy ElectionDetail.xaml
-    /// </summary>
-    public partial class ElectionDetail : Window
+    public partial class Electon : Window
     {
         private Election election;
 
         internal Election Election { get => election; set => election = value; }
 
-        public ElectionDetail()
+        public Electon()
         {
             InitializeComponent();
         }
@@ -46,14 +43,14 @@ namespace VotingWPF.Views
 
         private void ElectionList_Loaded(object sender, RoutedEventArgs e)
         {
-
+            UpdateThisList();
         }
       
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             DataBase db = DataBase.Instance;
             string username = CandidateInput.Text;
-            Candidate candidate = db.CandidateService.FindCandidateByUsername(username);
+            Candidate candidate = db.CandidateService.ReturnCandidateByUsername(username);
             if(candidate == null)
             {
 
@@ -61,9 +58,19 @@ namespace VotingWPF.Views
             else
             {
                 election.AddOption(candidate);
-                //UpdateThisList()
+                UpdateThisList();
             }
 
+        }
+
+        private void UpdateThisList()
+        {
+            List<ElectionOption> elections = election.Candidates;
+            electionList.Items.Clear();
+            elections.ForEach(election =>
+            {
+                electionList.Items.Add(election);
+            });
         }
     }
 }

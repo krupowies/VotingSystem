@@ -50,7 +50,7 @@ namespace VotingWPF.Views
             if (electionList.Items.Count != 0)
             {
                 Election election = (Election)electionList.SelectedItems[0];
-                ElectionDetail electionDetail = new ElectionDetail();
+                Electon electionDetail = new Electon();
                 electionDetail.Election = election;
                 electionDetail.DisplayInfo();
                 electionDetail.Owner = this;

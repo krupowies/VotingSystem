@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace VotingWPF
 {
-    /// <summary>
-    /// Logika interakcji dla klasy CandPanel.xaml
-    /// </summary>
     public partial class CandPanel : Window
     {
         public CandPanel()

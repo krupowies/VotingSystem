@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using VotingWPF.Classes;
+using VotingWPF.Service;
 
 namespace VotingWPF
 {
@@ -32,36 +34,35 @@ namespace VotingWPF
             startPanel.Show();
         }
 
-        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        private void RegisterButtonVoter_Click(object sender, RoutedEventArgs e)
         {
-            Lists lists = Lists.Instance;
-            Role role;
+            DataBase lists = DataBase.Instance;
+            int age = 0;
             Gender gender;
-            Button roleCheck = sender as Button;
-            if(roleCheck.Name == "GoVoteButton")
+            string message = "ERROR";
+
+            if(agetxt.Text != "" && Regex.IsMatch(agetxt.Text, "^[1-9][0-9][0-9]?$"))
             {
-                role = Role.VOTER;
+                Int32.TryParse(agetxt.Text, out age);
             }
             else
             {
-                role = Role.CANDIDATE;
-            } 
+                MessageBox.Show(message, "Age is invalid", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
 
             if (male.IsChecked == true)
             {
                 gender = Gender.MALE;
-                MessageBox.Show("MALE");
             }
             else if(female.IsChecked == true)
             {
                 gender = Gender.FEMALE;
-                MessageBox.Show("FEMALE");
 
             }
             else if(other.IsChecked == true)
             {
                 gender = Gender.OTHER;
-                MessageBox.Show("OTHER");
             }
             else
             {
@@ -69,10 +70,76 @@ namespace VotingWPF
                 return;
                
             }
-            string description = "";
+            
+           // Int32.TryParse(agetxt.Text, out age);
+
+          
+                try
+                {
+                    lists.VoterService.AddVoter(usernametxt.Text, passwordtxt.Text, nametxt.Text, lastnametxt.Text, age, gender);
+
+                }catch(Exception exe)
+                {
+                    MessageBox.Show(exe.Message, "Your username is already used", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            
+
+            Window startPanel = new MainWindow();
+            this.Close();
+            startPanel.Show();
+        }
+
+        private void RegisterButtonCandidate_Click(object sender, RoutedEventArgs e)
+        {
+            DataBase lists = DataBase.Instance;
+            
+            Gender gender;
             int age = 0;
-            Int32.TryParse(agetxt.Text, out age);
-            lists.UserService.addUser(role, usernametxt.Text, passwordtxt.Text, nametxt.Text, lastnametxt.Text, age, gender,description);
+            string message = "ERROR";
+
+            if (agetxt.Text != "" && Regex.IsMatch(agetxt.Text, "^[1-9][0-9][0-9]?$"))
+            {
+                Int32.TryParse(agetxt.Text, out age);
+            }
+            else
+            {
+                MessageBox.Show(message, "Age is invalid", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+
+
+            if (male.IsChecked == true)
+            {
+                gender = Gender.MALE;
+            }
+            else if (female.IsChecked == true)
+            {
+                gender = Gender.FEMALE;
+
+            }
+            else if (other.IsChecked == true)
+            {
+                gender = Gender.OTHER;
+            }
+            else
+            {
+                MessageBox.Show("Choose gender");
+                return;
+
+            }
+           
+
+           
+                try
+                {
+                    lists.VoterService.AddVoter(usernametxt.Text, passwordtxt.Text, nametxt.Text, lastnametxt.Text, age, gender);
+
+                }
+                catch (Exception exe)
+                {
+                    MessageBox.Show(exe.Message, "Your username is already used", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
 
             Window startPanel = new MainWindow();
             this.Close();

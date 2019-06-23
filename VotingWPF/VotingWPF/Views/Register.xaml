@@ -57,7 +57,7 @@
             <TextBlock Grid.Column="0" Text="Password " Foreground="Black" FontSize="30" HorizontalAlignment="Left" Margin="0,0,0,0.2" Width="248"/>
             <TextBox Grid.Column="1" Name="passwordtxt" Background="Gray" Foreground="White" FontSize="30" Margin="2,0,-0.4,0.2"/>
         </Grid>
-        
+
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="126*"/>
@@ -71,11 +71,13 @@
 
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.3*"/>
-                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.2*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="1" x:Name="GoBackButton" Click="GoBackButton_Click" Margin="157,0,65.8,43" FontSize="20" FontWeight="Bold" Content="Go back" Width="150" Height="30" Background="MediumSpringGreen" />
-            <Button Grid.Column="0" x:Name="RegisterButton" Click="RegisterButton_Click" Margin="30.0,27,192.6,43" FontSize="20" FontWeight="Bold" Content="Sign Up" Width="150" Height="30" Background="MediumSpringGreen" />
+            <Button x:Name="GoBackButton" Click="GoBackButton_Click" Margin="0,60,98.8,10" FontSize="20" FontWeight="Bold" Content="Go back" Width="150" Height="30" Background="MediumSpringGreen" />
+            <Button Grid.Column="1" x:Name="RegisterButtonCandidate" Click="RegisterButtonCandidate_Click" Margin="98.2,25,248.6,45" FontSize="15" FontWeight="Bold" Content="Sign Up as Cand." Width="150" Height="30" Background="MediumSpringGreen" Grid.ColumnSpan="2" />
+            <Button Grid.Column="2" x:Name="RegisterButtonVoter" Click="RegisterButtonVoter_Click" Margin="89.2,25,9.6,45" FontSize="15" FontWeight="Bold" Content="Sign Up as Voter" Width="150" Height="30" Background="MediumSpringGreen" />
         </Grid>
     </StackPanel>
 </Window>

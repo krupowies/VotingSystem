@@ -13,13 +13,14 @@ namespace VotingWPF.Service
 
         private ElectionService electionService;
         private CandidateService candidateService;
+        private VoterService voterService;
 
 
         public DataBase()
         {
                 this.ElectionService = new ElectionService();
                 this.CandidateService = new CandidateService();
-
+                this.voterService = new VoterService();
         }
 
         internal static DataBase Instance
@@ -36,5 +37,6 @@ namespace VotingWPF.Service
 
         internal ElectionService ElectionService { get => electionService; set => electionService = value; }
         internal CandidateService CandidateService { get => candidateService; set => candidateService = value; }
+        internal VoterService VoterService { get => voterService; set => voterService = value; }
     }
 }

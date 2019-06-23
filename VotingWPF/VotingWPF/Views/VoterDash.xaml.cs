@@ -23,20 +23,5 @@ namespace VotingWPF.Views
         {
             InitializeComponent();
         }
-
-        private void ChooseEleButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OtherButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void LogOutButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

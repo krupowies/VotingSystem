@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VotingWPF.Classes;
 
 namespace ProjektPK.Repositories
 {
@@ -31,7 +32,7 @@ namespace ProjektPK.Repositories
             }
             else
             {
-                throw new Exception("There is no element with souch id");
+                throw new Exception("There is no element with such id");
             }
         }
         public List<T> getAll()
@@ -54,5 +55,7 @@ namespace ProjektPK.Repositories
             return repository.Keys.Last();
 
         }
+
+
     }
 }

@@ -11,12 +11,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VotingWPF.Classes;
+using VotingWPF.Service;
+using VotingWPF.Views;
 
 namespace VotingWPF
 {
-    /// <summary>
-    /// Logika interakcji dla klasy Register.xaml
-    /// </summary>
     public partial class Login : Window
     {
         public Login()
@@ -33,13 +33,17 @@ namespace VotingWPF
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            Lists lists = Lists.Instance;
+            DataBase lists = DataBase.Instance;
             Button roleCheck = sender as Button;
-            if (roleCheck.Name == "GoVoteButton")
+            if (roleCheck.Name == "LoginButton")
             {
-                if (lists.UserService.loginVoter(logintxt.Text, passwordtxt.Text) == true)
+                Voter voter = lists.VoterService.Login(logintxt.Text, passwordtxt.Text);
+                if (voter != null)
                 {
-                    //tutaj idziemy do panelu glosowania
+                    ElectionsPanel electionsPanel = new ElectionsPanel();
+                    electionsPanel.Voter = voter;
+                    electionsPanel.Show();
+                    this.Close();
                 }
                 else
                 {
@@ -50,15 +54,6 @@ namespace VotingWPF
             }
             else
             {
-                if(lists.UserService.loginCandidate(logintxt.Text, passwordtxt.Text) == true)
-                {
-                    //tutaj idziemy do panelu glosowania 
-                }
-                else
-                {
-                    MessageBox.Show("Incorrect login or password");
-                    return;
-                }
             }
         }
     }

@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         Title="DoTheVote" Height="450" Width="800">
     <Grid>
-        <RadioButton Name="Option1" Content="1" HorizontalAlignment="Left" Margin="216,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,0.5"/>
-        <RadioButton Name="Option2" Content="3" HorizontalAlignment="Left" Margin="216,250,0,0" VerticalAlignment="Top"/>
+        <Label Content="Choose your answer : " Foreground="Black" FontSize="50" HorizontalAlignment="Center"/>
+        <TextBlock Name="Question" Text=""/>
+        <DataGrid x:Name="electionList" Loaded="ElectionList_Loaded" HorizontalAlignment="Left" SelectionMode="Single"  VerticalAlignment="Top"   BorderBrush="White" Margin="0,83,-0.4,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}"  Width="*" Header="Name" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding LastName}"  Width="*" Header="LastName" IsReadOnly="True"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Grid.Column="0" x:Name="Vote" Click="Vote_Click" Margin="313,380,330.6,10" FontSize="20" FontWeight="Bold" Content="Vote" Width="150" Height="30" Background="MediumSpringGreen" />
     </Grid>
 </Window>

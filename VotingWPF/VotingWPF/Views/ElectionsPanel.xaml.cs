@@ -11,14 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VotingWPF.Classes;
+using VotingWPF.Service;
 
 namespace VotingWPF.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy ElectionsPanel.xaml
-    /// </summary>
-    public partial class ElectionsPanel : Window
+    public partial class ElectionsPanel : Window ,ListView
     {
+        Voter voter;
+
+        internal Voter Voter { get => voter; set => voter = value; }
+
         public ElectionsPanel()
         {
             InitializeComponent();
@@ -26,9 +29,39 @@ namespace VotingWPF.Views
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
-            Window startPanel = new VoterDash();
+            Window startPanel = new MainWindow();
             this.Close();
             startPanel.Show();
+        }
+
+        private void ElectionList_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateList();
+        }
+
+        private void ElectionList_PreviewMouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (electionList.Items.Count != 0)
+            {
+                Election election = (Election)electionList.SelectedItems[0];
+                DoTheVote vote = new DoTheVote();
+                vote.Election = election;
+                vote.Voter = voter;
+                vote.Owner = this;
+                vote.Show();
+            }
+        }
+
+        public void UpdateList()
+        {
+            DataBase database = DataBase.Instance;
+            List<Election> elections = database.ElectionService.ElectionRepository.getAll();
+            electionList.Items.Clear();
+            elections.ForEach(election =>
+            {
+                if(!election.VoterVoted(voter))
+                electionList.Items.Add(election);
+            });
         }
     }
 }

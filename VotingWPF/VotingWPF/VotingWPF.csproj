@@ -60,6 +60,7 @@
     <Compile Include="Service\CandidateService.cs" />
     <Compile Include="Service\ElectionService.cs" />
     <Compile Include="Service\DataBase.cs" />
+    <Compile Include="Service\VoterService.cs" />
     <Compile Include="Views\AddElection.xaml.cs">
       <DependentUpon>AddElection.xaml</DependentUpon>
     </Compile>
@@ -82,7 +83,6 @@
     <Compile Include="Classes\Role.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Voter.cs" />
-    <Compile Include="Classes\Lists.cs" />
     <Compile Include="Views\CreateDesView.xaml.cs">
       <DependentUpon>CreateDesView.xaml</DependentUpon>
     </Compile>
@@ -103,7 +103,6 @@
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
     <Compile Include="Repositories\UserRepository.cs" />
-    <Compile Include="Service\UserService.cs" />
     <Compile Include="Views\VoterDash.xaml.cs">
       <DependentUpon>VoterDash.xaml</DependentUpon>
     </Compile>

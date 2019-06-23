@@ -32,8 +32,42 @@ namespace VotingWPF.Classes
             candidates.Add(candidate);
         }
         public string Winner { get {
-                //ZAIMPLEMENTOWAC FUNKCJE ZWRACAJACA NAZWE UZYTKOWNIKA KTORY MA NAJWECEJ GLOSOW W CANDIDATES
-                return "Adam";
+                string winner = "";
+                int temp = 0;
+               foreach(ElectionOption candidate in candidates)
+                {
+                    if(candidate.VoteCounter > temp)
+                    {
+                        temp = candidate.VoteCounter;
+                        winner = candidate.Candidate.LastName;
+                    }
+                }
+                return winner;
+            }
+        }
+
+        public void AddVoter(Voter voter)
+        {
+            voters.Add(voter);
+        }
+        public bool VoterVoted(Voter person)
+        {
+           foreach(Voter voter in voters)
+            {
+                if(voter.UserName == person.UserName)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public void Voting(Voter voter,Candidate candidate)
+        {
+            voters.Add(voter);
+            foreach(ElectionOption option in candidates)
+            {
+                if (option.Candidate.UserName == candidate.UserName)
+                    option.VoteCounter += 1;
             }
         }
     }

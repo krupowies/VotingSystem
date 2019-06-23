@@ -66,3 +66,5 @@ C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\ElectionDetail.g.cs
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\AddElection.baml
 C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\ElectionDetail.baml
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\DoTheVote.g.cs
+C:\Users\krupo\OneDrive\Pulpit\VotingSystem\VotingWPF\VotingWPF\obj\Debug\Views\DoTheVote.baml
