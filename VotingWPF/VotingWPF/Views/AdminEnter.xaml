@@ -18,7 +18,7 @@
                 <ColumnDefinition Width="197*"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="0" Text="Password " Foreground="Black" FontSize="40" HorizontalAlignment="Left" Margin="0,0,0,0.2" Width="248"/>
-            <TextBox Grid.Column="1" Name="passwordtxt" Background="Gray" Foreground="White" FontSize="40" Margin="2,0,-0.4,0.2"/>
+            <PasswordBox Grid.Column="1" Name="passwordtxt" Background="Gray" Foreground="White" FontSize="40" Margin="2,0,-0.4,0.2"/>
         </Grid>
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>

@@ -11,12 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VotingWPF.Classes;
 
 namespace VotingWPF
 {
-    /// <summary>
-    /// Logika interakcji dla klasy AdminEnter.xaml
-    /// </summary>
     public partial class AdminEnter : Window
     {
         public AdminEnter()
@@ -33,7 +31,8 @@ namespace VotingWPF
 
         private void EnterButton_Click(object sender, RoutedEventArgs e)
         {
-            if (passwordtxt.Text == "admin")
+            Admin admin = new Admin();
+            if (passwordtxt.Password == admin.password )
             {
                 Window adminPanel = new AdminPanel();
                 this.Close();
@@ -42,7 +41,7 @@ namespace VotingWPF
             else
             {
                 MessageBox.Show("Incorrect password");
-                passwordtxt.Text = "";
+                passwordtxt.Password = "";
             }
         }
     }

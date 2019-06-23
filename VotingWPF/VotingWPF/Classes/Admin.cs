@@ -8,5 +8,12 @@ namespace VotingWPF.Classes
 {
     class Admin
     {
+       public string username;
+       public string password;
+        public Admin()
+        {
+            this.username = "admin";
+            this.password = "admin";
+        }
     }
 }

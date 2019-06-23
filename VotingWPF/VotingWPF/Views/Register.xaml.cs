@@ -44,6 +44,10 @@ namespace VotingWPF
             if(agetxt.Text != "" && Regex.IsMatch(agetxt.Text, "^[1-9][0-9][0-9]?$"))
             {
                 Int32.TryParse(agetxt.Text, out age);
+                if (age < 18)
+                {
+                    MessageBox.Show(message, "Age is invalid", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else
             {
@@ -71,7 +75,7 @@ namespace VotingWPF
                
             }
             
-           // Int32.TryParse(agetxt.Text, out age);
+          
 
           
                 try
@@ -100,6 +104,10 @@ namespace VotingWPF
             if (agetxt.Text != "" && Regex.IsMatch(agetxt.Text, "^[1-9][0-9][0-9]?$"))
             {
                 Int32.TryParse(agetxt.Text, out age);
+                if(age < 18)
+                {
+                    MessageBox.Show(message, "Age is invalid", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else
             {

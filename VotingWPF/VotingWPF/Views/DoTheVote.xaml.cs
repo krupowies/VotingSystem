@@ -15,9 +15,6 @@ using VotingWPF.Classes;
 
 namespace VotingWPF.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy DoTheVote.xaml
-    /// </summary>
     public partial class DoTheVote : Window
     {
         Election election;
