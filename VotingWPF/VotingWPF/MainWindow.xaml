@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="VOTER" x:Name="GoVoteButton" Click="GoVoteButton_Click" HorizontalAlignment="Left" Margin="55,210,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
-        <Button Content="CANDIDATE" x:Name="GoCandButton" Click="GoCandButton_Click" HorizontalAlignment="Left" Margin="327,209,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
+        <Button Content="USER" x:Name="GoVoteButton" Click="GoVoteButton_Click" HorizontalAlignment="Left" Margin="55,210,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
+        <!-- <Button Content="CANDIDATE" x:Name="GoCandButton" Click="GoCandButton_Click" HorizontalAlignment="Left" Margin="327,209,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/> -->
         <Button Content="ADMIN" x:Name="GoAdminButton" Click="GoAdminButton_Click" HorizontalAlignment="Left" Margin="578,209,0,0" VerticalAlignment="Top" Width="129" Background="MediumSpringGreen" Height="40"/>
 
     </Grid>
