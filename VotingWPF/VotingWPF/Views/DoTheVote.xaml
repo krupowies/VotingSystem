@@ -8,8 +8,8 @@
         Title="DoTheVote" Height="450" Width="800">
     <Grid>
         <Label Content="Choose your answer : " Foreground="Black" FontSize="50" HorizontalAlignment="Center"/>
-        <TextBlock Name="Question" Text=""/>
-        <DataGrid x:Name="electionList" Loaded="ElectionList_Loaded" HorizontalAlignment="Left" SelectionMode="Single"  VerticalAlignment="Top"   BorderBrush="White" Margin="0,83,-0.4,0">
+        <TextBlock Name="Question" Text="" HorizontalAlignment="Center" Margin="172,70,173.6,288" FontSize="30" Width="448"/>
+        <DataGrid x:Name="electionList" Loaded="ElectionList_Loaded" HorizontalAlignment="Left" SelectionMode="Single"  VerticalAlignment="Top"   BorderBrush="White" Margin="0,152,-0.4,0">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}"  Width="*" Header="Name" IsReadOnly="True"/>
                 <DataGridTextColumn Binding="{Binding LastName}"  Width="*" Header="LastName" IsReadOnly="True"/>
